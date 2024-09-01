@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+/* future */
+.future {
+    margin-top: 5rem;
+}
+
+.future figure {
+    margin-top: 5rem;
+}
+
+.future h2 {
+    /* fw700+fz3.3r */
+    font-weight: 700;
+    font-size: 3.3rem;
+}
+
+.future p {
+    /* fw200+fz2.2r+c */
+    font-weight: 200;
+    font-size: 2.2rem;
+    color: var(--text-shadow-color);
+}
+
+/* pursuit */
+.pursuit {
+    /* mt5r */
+    margin-top: 5rem;
+}
+
+.pursuit h2 {
+    /* fw700+fz5r */
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.pursuit figure img {
+    min-width: 45rem;
+    height: 28.4rem;
+}
+
+.pursuit .pursuit-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.pursuit .pursuit-list dl {
+    background-color: var(--main-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.pursuit .pursuit-list dl dt {
+    /* fw700+fz2.4r+c#fff */
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: left;
+}
+.pursuit .pursuit-list dl dd {
+    /* fw500+fz1.6r+c#fff */
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: left;
+}
+
+.hero-list li {
+    margin-top: 15.5rem;
+}
+
+.hero-list li {
+    display: flex; /* 플랙스 박스 */
+    justify-content: center;
+    align-items: center;
+    gap: 30rem;
+}
+
+.hero-list li:last-child {
+    flex-direction: row-reverse; /* row방향을 반대로  */
+    left: 1rem;
+}
+
+.hero-list li strong {
+    /* fw100+fz8r */
+    font-weight: 100;
+    font-size: 8rem;
+}
+
+.hero-list li strong b {
+    font-weight: 200;
+}
+
+.hero-list li p {
+    /* fw100+fz3r */
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.hero-wrap {
+    display: flex;
+    flex-direction: column; /* 플렉스의 메인축 방향을 컬럼방향으로 (세로) */
+    gap: 5.2rem;
+}
+
+/* recipe */
+
+.recipe {
+    margin-top: 5.2rem;
+}
+
+.recipe h2 {
+    /* fw700+fz5r */
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.recipe-list figure img {
+    width: 45rem;
+    height: 45rem;
+}
+
+.recipe-list li {
+    background-color: var(--main-color);
+}
+
+.recipe-list li p {
+    font-weight: 500;
+    font-size: 3rem;
+    color: #fff;
+    display: block;
+    padding: 20px;
+}
+
+/* nutrient */
+
+.nutrient {
+    margin-top: 5.2rem;
+    margin-bottom: 5.2rem;
+}
+
+.nutrient h2 {
+    /* fw700+fz5r */
+    font-weight: 700;
+    font-size: 5rem;
+}
+.nutrient p {
+    /* fw200+fz2.5r+c */
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: var(--dark-30);
+}
+
+.nutrient-list {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.3rem;
+}
+
+.nutrient-list li dl {
+    display: flex;
+    flex-direction: column; /* 플렉스의 메인축 방향을 컬럼방향으로 (세로) */
+    align-items: center;
+    justify-content: center;
+}
+.nutrient-list li dl dt {
+    /* fw500+fz3.5r+c */
+    font-weight: 500;
+    font-size: 3.5rem;
+    color: var(--main-color);
+}
+.nutrient-list li dl dd {
+    /* fw500+fz2.3r+c */
+    font-weight: 500;
+    font-size: 2.3rem;
+    color: var(--text-color-gray);
+}
