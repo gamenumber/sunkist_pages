@@ -106,7 +106,7 @@
 /* recipe */
 
 .recipe {
-    margin-top: 5.2rem;
+    margin-top: 10rem;
 }
 
 .recipe h2 {
@@ -143,8 +143,8 @@
 /* nutrient */
 
 .nutrient {
-    margin-top: 5.2rem;
-    margin-bottom: 5.2rem;
+    margin-top: 10rem;
+    margin-bottom: 12rem;
 }
 
 .nutrient h2 {

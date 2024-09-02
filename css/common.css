@@ -70,12 +70,29 @@ img {
 
 #header {
     width: 200rem;
-    min-height: 50rem;
+    min-height: 40rem;
     background: url(../img/main/header-background.jpg) no-repeat;
     position: relative;
     margin: 0 auto;
     padding: 7rem;
     display: flex;
+}
+
+#header-sub {
+    width: 200rem;
+    min-height: 30rem;
+    background: url(../img/sub/header-background.jpg) no-repeat;
+    position: relative;
+    margin: 0 auto;
+    padding: 7rem;
+    display: flex;
+}
+
+#header-sub .inner h1 {
+    /* fw700+fz8r+c#fff */
+    font-weight: 700;
+    font-size: 8rem;
+    color: var(--white-100);
 }
 
 .inner {
