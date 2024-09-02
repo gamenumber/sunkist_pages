@@ -1,31 +1,30 @@
 @charset "utf-8";
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"); /* pretendard */
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap'); /* inria-sans */
-
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap"); /* inria-sans */
 
 /* 변수 선언 + 추가 디자인 초기화 */
 :root {
-    --main-color: #FFA800;
-    --sub-color1: #FF5C00;
-    --sub-color2: #FFF0D4;
-    --sub-color3: #0CA312;
+    --main-color: #ffa800;
+    --sub-color1: #ff5c00;
+    --sub-color2: #fff0d4;
+    --sub-color3: #0ca312;
     --title-color: #000;
     --text-color: #000;
     --text-color-gray: #585858;
-    --text-shadow-color: rgba(0,0,0,0.7);
+    --text-shadow-color: rgba(0, 0, 0, 0.7);
     --gray-color: #dfdfdf;
     --grid-color: #ff6347;
-    --white-100: rgba(255,255,255,1);
-    --white-90: rgba(255,255,255,0.9);
-    --white-80: rgba(255,255,255,0.8);
-    --white-70: rgba(255,255,255,0.7);
-    --white-60: rgba(255,255,255,0.6);
-    --white-50: rgba(255,255,255,0.5);
-    --white-40: rgba(255,255,255,0.4);
-    --white-30: rgba(255,255,255,0.3);
-    --white-20: rgba(255,255,255,0.2);
-    --white-10: rgba(255,255,255,0.1);
-    --dark-30: rgba(0,0,0,0.3);
+    --white-100: rgba(255, 255, 255, 1);
+    --white-90: rgba(255, 255, 255, 0.9);
+    --white-80: rgba(255, 255, 255, 0.8);
+    --white-70: rgba(255, 255, 255, 0.7);
+    --white-60: rgba(255, 255, 255, 0.6);
+    --white-50: rgba(255, 255, 255, 0.5);
+    --white-40: rgba(255, 255, 255, 0.4);
+    --white-30: rgba(255, 255, 255, 0.3);
+    --white-20: rgba(255, 255, 255, 0.2);
+    --white-10: rgba(255, 255, 255, 0.1);
+    --dark-30: rgba(0, 0, 0, 0.3);
 }
 
 ::selection {
@@ -71,7 +70,7 @@ img {
 
 #header {
     width: 200rem;
-    min-height: 70rem;
+    min-height: 50rem;
     background: url(../img/main/header-background.jpg) no-repeat;
     position: relative;
     margin: 0 auto;
@@ -87,14 +86,13 @@ img {
 }
 
 .header-con {
-    display: flex; 
+    display: flex;
     gap: 20rem;
     padding: 6rem;
 }
 
-
 .header-con .gnb {
-    display: flex; 
+    display: flex;
     gap: 4rem;
 }
 
@@ -110,8 +108,8 @@ img {
     background-color: #fff;
     border-radius: 60%;
     padding: 2rem 3.5rem;
-    display: flex;           /* df : 플랙스박스 */
-    align-items: center;     /* aic : 교차축 방향 중앙정렬 */
+    display: flex; /* df : 플랙스박스 */
+    align-items: center; /* aic : 교차축 방향 중앙정렬 */
     justify-content: center; /* jcc : 메인축 방향 중앙정렬 */
     transition: 0.4s; /* 호버효과 주기위해서 미리 대기 */
 }
@@ -122,7 +120,7 @@ img {
     font-size: 2rem;
     color: var(--text-color);
     white-space: nowrap; /* 텍스트가 줄 바꿈 없이 한 줄로 유지되게 함 */
-    text-align: center;  /* 텍스트 중앙 정렬 */
+    text-align: center; /* 텍스트 중앙 정렬 */
     transition: 0.4s; /* 호버효과 주기위해서 미리 대기 */
 }
 
@@ -149,7 +147,7 @@ img {
 
 #footer p {
     /* fw400+fz20+c */
-    font-family: 'Inria Sans', sans-serif;
+    font-family: "Inria Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: var(--main-color);
@@ -171,7 +169,7 @@ img {
 
 #footer strong {
     /* fw400+fz20+c */
-    font-family: 'Inria Sans', sans-serif;
+    font-family: "Inria Sans", sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: var(--main-color);
@@ -191,7 +189,6 @@ img {
     gap: 2rem;
 }
 
-
 .right-wrap {
     display: flex;
     flex-direction: column; /* 플렉스의 메인축 방향을 컬럼방향으로 (세로) */
@@ -204,9 +201,3 @@ img {
     display: flex;
     gap: 0.2rem;
 }
-
-
-
-
-
-
