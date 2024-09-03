@@ -68,28 +68,27 @@ img {
 
 /* header */
 
-#header {
-    width: 200rem;
+/* header 수정 */
+#header,
+#header-sub {
+    width: 100%;
+    max-width: 200rem; /* 140rem으로 최대 너비 제한 */
     min-height: 40rem;
     background: url(../img/main/header-background.jpg) no-repeat;
     position: relative;
     margin: 0 auto;
     padding: 7rem;
     display: flex;
+    justify-content: center; /* flexbox를 사용하여 내부 요소를 가운데 정렬 */
+    align-items: center; /* 세로축에서도 가운데 정렬 */
 }
-
 #header-sub {
-    width: 200rem;
-    min-height: 30rem;
-    background: url(../img/sub/header-background.jpg) no-repeat;
-    position: relative;
-    margin: 0 auto;
-    padding: 7rem;
-    display: flex;
+    background-image: url(../img/sub/header-background.jpg) no-repeat;
 }
 
 #header-sub .inner h1 {
     /* fw700+fz8r+c#fff */
+    align-items: center;
     font-weight: 700;
     font-size: 8rem;
     color: var(--white-100);
@@ -97,7 +96,7 @@ img {
 
 .inner {
     width: 140rem;
-    /* background: var(--grid-color); */
+    background: var(--grid-color);
     margin: 0 auto; /* Center the inner content */
     text-align: center;
 }
