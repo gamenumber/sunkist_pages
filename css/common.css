@@ -96,7 +96,7 @@ img {
 
 .inner {
     width: 140rem;
-    background: var(--grid-color);
+    /* background: var(--grid-color); */
     margin: 0 auto; /* Center the inner content */
     text-align: center;
 }
