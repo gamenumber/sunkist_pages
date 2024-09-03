@@ -152,13 +152,16 @@ img {
 /* footer */
 
 #footer {
-    width: 200rem;
+    width: 100%; /* Change width to 100% for full width */
+    max-width: 200rem; /* Limit max width */
     min-height: 40rem;
     background: var(--sub-color2);
     position: relative;
     margin: 0 auto;
     display: flex;
     padding: 10rem;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 
 #footer p {
@@ -194,20 +197,20 @@ img {
 .footer-wrap {
     display: flex;
     text-align: left;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     gap: 20rem;
+    width: 100%; /* Ensure it spans the full width */
 }
 
-.left-wrap {
+.left-wrap,
+.right-wrap {
     display: flex;
-    flex-direction: column; /* 플렉스의 메인축 방향을 컬럼방향으로 (세로) */
+    flex-direction: column; /* Align flex items vertically */
     gap: 2rem;
 }
 
 .right-wrap {
-    display: flex;
-    flex-direction: column; /* 플렉스의 메인축 방향을 컬럼방향으로 (세로) */
     gap: 2.4rem;
     align-items: flex-start;
     justify-content: center;
