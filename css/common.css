@@ -120,24 +120,31 @@ img {
 }
 
 .gnb li {
-    /* bgc#fff+bdrs60p+p20-35+ */
-    background-color: #fff;
-    border-radius: 60%;
-    padding: 2rem 3.5rem;
-    display: flex; /* df : 플랙스박스 */
+    background-color: #fff; /* bgc#fff */
+    border-radius: 60%; /* bdrs60p */
+    display: flex; /* df : 플렉스박스 */
     align-items: center; /* aic : 교차축 방향 중앙정렬 */
     justify-content: center; /* jcc : 메인축 방향 중앙정렬 */
     transition: 0.4s; /* 호버효과 주기위해서 미리 대기 */
 }
 
 .gnb li a {
-    /* fw700+fz2r+c */
-    font-weight: 700;
-    font-size: 2rem;
-    color: var(--text-color);
+    font-weight: 700; /* fw700 */
+    font-size: 2rem; /* fz2r */
+    color: var(--text-color); /* c */
     white-space: nowrap; /* 텍스트가 줄 바꿈 없이 한 줄로 유지되게 함 */
     text-align: center; /* 텍스트 중앙 정렬 */
     transition: 0.4s; /* 호버효과 주기위해서 미리 대기 */
+
+    display: flex; /* a를 플렉스 컨테이너로 설정 */
+    align-items: center; /* 교차축 중앙정렬 */
+    justify-content: center; /* 메인축 중앙정렬 */
+    width: 100%; /* a의 너비를 부모(li)와 동일하게 설정 */
+    height: 100%; /* a의 높이를 부모(li)와 동일하게 설정 */
+
+    padding: 2rem 3.5rem; /* 패딩을 a로 이동 */
+    border-radius: 60%; /* li와 동일한 border-radius 적용 */
+    background-color: inherit; /* li의 배경색 상속 */
 }
 
 /* 호버효과 */
