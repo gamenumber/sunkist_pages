@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* 카테고리 */
 .category {
     display: flex;
     justify-content: space-between;
@@ -56,5 +57,72 @@
     font-weight: 700;
 }
 
-.recipes {
+/* 실제 메뉴 */
+.lemon,
+.orange,
+.mandarin,
+.drink,
+.meat {
+    display: flex;
+    flex-direction: column; /* Align flex items vertically */
+    gap: 3rem;
+    margin-top: 10rem;
+}
+
+.meat {
+    margin-bottom: 10rem;
+}
+
+.lemon-list,
+.orange-list,
+.mandarin-list,
+.drink-list,
+.meat-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.lemon h2,
+.orange h2,
+.mandarin h2,
+.drink h2,
+.meat h2 {
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.lemon-list li dl,
+.orange-list li dl,
+.mandarin-list li dl,
+.drink-list li dl,
+.meat-list li dl {
+    margin-top: 4rem;
+}
+
+.lemon-list li dl dt,
+.orange-list li dl dt,
+.mandarin-list li dl dt,
+.drink-list li dl dt,
+.meat-list li dl dt {
+    font-weight: 500;
+    font-size: 3.2rem;
+    color: var(--main-color);
+}
+
+.lemon-list li dl dd,
+.orange-list li dl dd,
+.mandarin-list li dl dd,
+.drink-list li dl dd,
+.meat-list li dl dd {
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: var(--dark-50);
+}
+
+.lemon-list li dl dd b,
+.orange-list li dl dd b,
+.mandarin-list li dl dd b,
+.drink-list li dl dd b,
+.meat-list li dl dd b {
+    word-spacing: 1rem; /* 단어 사이의 띄어쓰기 간격 늘리기 */
 }
