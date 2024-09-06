@@ -19,6 +19,8 @@
     width: 10rem;
     height: 10rem;
     background: no-repeat center center;
+    user-select: none; /* 이미지 선택 방지 */
+    pointer-events: none; /* 드래그 방지 */
 }
 
 .category li:nth-child(1) a::before {
@@ -63,7 +65,7 @@
 .drink,
 .meat {
     display: flex;
-    flex-direction: column; /* 세로로 아이템 정렬 */
+    flex-direction: column;
     gap: 3rem;
     margin-top: 10rem;
 }
@@ -79,10 +81,10 @@
 .meat-list {
     display: flex;
     gap: 2rem;
-    overflow-x: auto; /* 가로 스크롤 가능하게 설정 */
-    overflow-y: hidden; /* 세로 스크롤은 숨김 */
+    overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
-    padding-bottom: 1rem; /* 스크롤바가 li를 가리지 않도록 패딩 추가 */
+    padding-bottom: 1rem;
 }
 
 .lemon h2,
@@ -99,11 +101,23 @@
 .mandarin-list li,
 .drink-list li,
 .meat-list li {
-    flex-shrink: 0; /* 아이템들이 줄어들지 않도록 설정 */
-    display: inline-block; /* 리스트 아이템을 가로로 배치 */
-    width: 45.4rem; /* li의 고정 너비 */
-    box-sizing: border-box; /* 패딩과 보더를 포함한 크기 계산 */
-    margin-right: 1rem; /* li 간의 여백을 추가 */
+    flex-shrink: 0;
+    display: inline-block;
+    width: 45.4rem;
+    box-sizing: border-box;
+    margin-right: 1rem;
+    pointer-events: none; /* 모든 포인터 이벤트 비활성화 */
+    user-select: none; /* 텍스트 선택 방지 */
+}
+
+/* 이미지에 대해서도 동일하게 적용 */
+.lemon-list li img,
+.orange-list li img,
+.mandarin-list li img,
+.drink-list li img,
+.meat-list li img {
+    pointer-events: none;
+    user-select: none;
 }
 
 .lemon-list li dl,
@@ -139,5 +153,5 @@
 .mandarin-list li dl dd b,
 .drink-list li dl dd b,
 .meat-list li dl dd b {
-    word-spacing: 1rem; /* 단어 사이의 띄어쓰기 간격 늘리기 */
+    word-spacing: 1rem;
 }
