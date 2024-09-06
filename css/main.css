@@ -167,6 +167,10 @@
     gap: 2.3rem;
 }
 
+.nutrient-list li figure {
+    margin-bottom: 1rem;
+}
+
 .nutrient-list li dl {
     display: flex;
     flex-direction: column; /* 플렉스의 메인축 방향을 컬럼방향으로 (세로) */
