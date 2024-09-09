@@ -19,8 +19,9 @@
     width: 10rem;
     height: 10rem;
     background: no-repeat center center;
-    user-select: none; /* 이미지 선택 방지 */
-    pointer-events: none; /* 드래그 방지 */
+    background-size: cover; /* 이미지 크기 조정 */
+    user-select: none;
+    pointer-events: none;
 }
 
 .category li:nth-child(1) a::before {
@@ -106,16 +107,19 @@
     width: 45.4rem;
     box-sizing: border-box;
     margin-right: 1rem;
-    pointer-events: none; /* 모든 포인터 이벤트 비활성화 */
-    user-select: none; /* 텍스트 선택 방지 */
+    pointer-events: none;
+    user-select: none;
 }
 
-/* 이미지에 대해서도 동일하게 적용 */
+/* 이미지 크기 통일 */
 .lemon-list li img,
 .orange-list li img,
 .mandarin-list li img,
 .drink-list li img,
 .meat-list li img {
+    width: 100%;
+    height: 30rem; /* 원하는 높이로 조정 가능 */
+    object-fit: cover; /* 이미지 비율 유지하면서 컨테이너에 맞춤 */
     pointer-events: none;
     user-select: none;
 }
