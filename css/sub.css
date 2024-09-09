@@ -9,7 +9,7 @@
 
 .category li {
     list-style: none; /* 리스트 스타일 제거 */
-    counter-increment: category; /* 각 li에 카운터 증가 */
+    cursor: pointer;
 }
 
 .category a {

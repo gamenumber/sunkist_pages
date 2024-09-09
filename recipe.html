@@ -47,34 +47,34 @@
         <!-- s: category -->
         <div class="inner">
             <ul class="category">
-                <li>
+                <li data-category="1">
                     <a href="#"><b>레몬</b></a>
                 </li>
-                <li>
+                <li data-category="1">
                     <a href="#"><b>오렌지</b></a>
                 </li>
-                <li>
+                <li data-category="1">
                     <a href="#"><b>만다린</b></a>
                 </li>
-                <li>
+                <li data-category="1">
                     <a href="#"><b>간편식</b></a>
                 </li>
-                <li>
+                <li data-category="2">
                     <a href="#"><b>디저트</b></a>
                 </li>
-                <li>
+                <li data-category="2">
                     <a href="#"><b>음료</b></a>
                 </li>
-                <li>
+                <li data-category="2">
                     <a href="#"><b>초콜릿</b></a>
                 </li>
-                <li>
+                <li data-category="3">
                     <a href="#"><b>칵테일</b></a>
                 </li>
-                <li>
+                <li data-category="3">
                     <a href="#"><b>육류</b></a>
                 </li>
-                <li>
+                <li data-category="3">
                     <a href="#"><b>국물&찜</b></a>
                 </li>
             </ul>
@@ -85,9 +85,9 @@
         <!-- section.lemon>.inner>(figure>img)*3>dl>dt+dd -->
         <article class="recipes">
             <div class="inner">
-                <section class="menu-section">
+                <section class="menu-section" id="sections-container">
                     <h2>레몬</h2>
-                    <ul class="menu-list">
+                    <ul class="menu-list" data-category="1">
                         <li>
                             <figure>
                                 <img
@@ -153,7 +153,7 @@
                     </ul>
                 </section>
 
-                <section class="menu-section">
+                <section class="menu-section" data-category="1">
                     <h2>오렌지</h2>
                     <ul class="menu-list">
                         <li>
@@ -227,7 +227,7 @@
                     </ul>
                 </section>
 
-                <section class="menu-section">
+                <section class="menu-section" data-category="1">
                     <h2>만다린</h2>
                     <ul class="menu-list">
                         <li>
@@ -303,7 +303,7 @@
                     </ul>
                 </section>
 
-                <section class="menu-section">
+                <section class="menu-section" data-category="1">
                     <h2>음료</h2>
                     <ul class="menu-list">
                         <li>
@@ -371,7 +371,7 @@
                     </ul>
                 </section>
 
-                <section class="menu-section">
+                <section class="menu-section" data-category="1">
                     <h2>육류</h2>
                     <ul class="menu-list">
                         <li>
@@ -446,7 +446,7 @@
                 </section>
 
                 <!-- 추가 -->
-                <section class="menu-section">
+                <section class="menu-section" data-category="2">
                     <h2>간편식</h2>
                     <ul class="menu-list">
                         <li>
@@ -518,7 +518,7 @@
                     </ul>
                 </section>
 
-                <section class="menu-section">
+                <section class="menu-section" data-category="2">
                     <h2>디저트</h2>
                     <ul class="menu-list">
                         <li>
@@ -595,7 +595,7 @@
                     </ul>
                 </section>
 
-                <section class="menu-section">
+                <section class="menu-section" data-category="3">
                     <h2>초콜릿</h2>
                     <ul class="menu-list">
                         <li>
@@ -671,7 +671,7 @@
                     </ul>
                 </section>
 
-                <section class="menu-section">
+                <section class="menu-section" data-category="3">
                     <h2>칵테일</h2>
                     <ul class="menu-list">
                         <li>
@@ -749,7 +749,7 @@
                         </li>
                     </ul>
                 </section>
-                <section class="menu-section">
+                <section class="menu-section" data-category="3">
                     <h2>국물&찜</h2>
                     <ul class="menu-list">
                         <li>
@@ -905,5 +905,7 @@
         <script src="script/scroll.js"></script>
         <script src="script/noclick.js"></script>
         <script src="script/imageset.js"></script>
+        <script src="script/category.js"></script>
+        <script src="script/set.js"></script>
     </body>
 </html>
