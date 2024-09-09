@@ -1,16 +1,24 @@
-/* 카테고리 */
+/* 카테고리 스타일 */
 .category {
     display: flex;
     justify-content: space-between;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin: 5rem 0;
+    flex-wrap: wrap; /* Flex 아이템이 화면 크기에 맞게 줄 바꿈을 할 수 있도록 함 */
+    counter-reset: category; /* 카운터 초기화 */
+}
+
+.category li {
+    list-style: none; /* 리스트 스타일 제거 */
+    counter-increment: category; /* 각 li에 카운터 증가 */
 }
 
 .category a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; /* 중앙 정렬 */
     padding: 10px;
+    text-decoration: none; /* 링크의 기본 밑줄 제거 */
 }
 
 .category li a::before {
@@ -18,68 +26,28 @@
     display: block;
     width: 10rem;
     height: 10rem;
-    background: no-repeat center center;
-    background-size: cover; /* 이미지 크기 조정 */
+    background: no-repeat center center / cover;
     user-select: none;
     pointer-events: none;
+    margin-bottom: 1rem; /* 이미지와 텍스트 사이 간격 */
 }
 
-.category li:nth-child(1) a::before {
-    background-image: url(../img/sub/category-1.jpg);
-}
-.category li:nth-child(2) a::before {
-    background-image: url(../img/sub/category-2.jpg);
-}
-.category li:nth-child(3) a::before {
-    background-image: url(../img/sub/category-3.jpg);
-}
-.category li:nth-child(4) a::before {
-    background-image: url(../img/sub/category-4.jpg);
-}
-.category li:nth-child(5) a::before {
-    background-image: url(../img/sub/category-5.jpg);
-}
-.category li:nth-child(6) a::before {
-    background-image: url(../img/sub/category-6.jpg);
-}
-.category li:nth-child(7) a::before {
-    background-image: url(../img/sub/category-7.jpg);
-}
-.category li:nth-child(8) a::before {
-    background-image: url(../img/sub/category-8.jpg);
-}
-.category li:nth-child(9) a::before {
-    background-image: url(../img/sub/category-9.jpg);
-}
-.category li:nth-child(10) a::before {
-    background-image: url(../img/sub/category-10.jpg);
-}
-
+/* 텍스트 스타일 */
 .category li a b {
     font-weight: 700;
+    font-size: 1.6rem;
+    color: #333;
 }
 
 /* 실제 메뉴 */
-.lemon,
-.orange,
-.mandarin,
-.drink,
-.meat {
+.menu-section {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     margin-top: 10rem;
 }
 
-.meat {
-    margin-bottom: 10rem;
-}
-
-.lemon-list,
-.orange-list,
-.mandarin-list,
-.drink-list,
-.meat-list {
+.menu-list {
     display: flex;
     gap: 2rem;
     overflow-x: auto;
@@ -88,20 +56,12 @@
     padding-bottom: 1rem;
 }
 
-.lemon h2,
-.orange h2,
-.mandarin h2,
-.drink h2,
-.meat h2 {
+.menu-section h2 {
     font-weight: 700;
     font-size: 5rem;
 }
 
-.lemon-list li,
-.orange-list li,
-.mandarin-list li,
-.drink-list li,
-.meat-list li {
+.menu-list li {
     flex-shrink: 0;
     display: inline-block;
     width: 45.4rem;
@@ -111,51 +71,34 @@
     user-select: none;
 }
 
-/* 이미지 크기 통일 */
-.lemon-list li img,
-.orange-list li img,
-.mandarin-list li img,
-.drink-list li img,
-.meat-list li img {
+.menu-list li img {
     width: 100%;
-    height: 30rem; /* 원하는 높이로 조정 가능 */
-    object-fit: cover; /* 이미지 비율 유지하면서 컨테이너에 맞춤 */
+    height: 30rem;
+    object-fit: cover;
     pointer-events: none;
     user-select: none;
 }
 
-.lemon-list li dl,
-.orange-list li dl,
-.mandarin-list li dl,
-.drink-list li dl,
-.meat-list li dl {
+.menu-list li dl {
     margin-top: 4rem;
 }
 
-.lemon-list li dl dt,
-.orange-list li dl dt,
-.mandarin-list li dl dt,
-.drink-list li dl dt,
-.meat-list li dl dt {
+.menu-list li dl dt {
     font-weight: 500;
     font-size: 3.2rem;
     color: var(--main-color);
 }
 
-.lemon-list li dl dd,
-.orange-list li dl dd,
-.mandarin-list li dl dd,
-.drink-list li dl dd,
-.meat-list li dl dd {
+.menu-list li dl dd {
     font-weight: 200;
     font-size: 2.5rem;
     color: var(--dark-50);
 }
 
-.lemon-list li dl dd b,
-.orange-list li dl dd b,
-.mandarin-list li dl dd b,
-.drink-list li dl dd b,
-.meat-list li dl dd b {
+.menu-list li dl dd b {
     word-spacing: 1rem;
+}
+
+.menu-list:last-child {
+    margin-bottom: 10rem;
 }
