@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const sectionsContainer = document.getElementById("sections-container");
     const sections = Array.from(document.querySelectorAll(".menu-section"));
 
-    // 모든 섹션 숨기기
-    sections.forEach((section) => (section.style.display = "none"));
+    // 처음에 모든 섹션을 표시
+    sections.forEach((section) => (section.style.display = "block"));
 
     categoryItems.forEach((item) => {
         item.addEventListener("click", function () {

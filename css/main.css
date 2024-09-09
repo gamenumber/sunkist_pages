@@ -2,7 +2,7 @@
 
 /* future */
 .future {
-    margin-top: 5rem;
+    margin-top: 15rem;
 }
 
 .future figure {
@@ -25,7 +25,7 @@
 /* pursuit */
 .pursuit {
     /* mt5r */
-    margin-top: 5rem;
+    margin-top: 20rem;
 }
 
 .pursuit h2 {
@@ -40,8 +40,9 @@
 }
 
 .pursuit .pursuit-list {
+    margin-top: 4.5rem;
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .pursuit .pursuit-list dl {
@@ -49,6 +50,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    gap: 1.2rem;
 }
 .pursuit .pursuit-list dl dt {
     /* fw700+fz2.4r+c#fff */
@@ -63,6 +65,10 @@
     font-size: 1.4rem;
     color: #fff;
     text-align: left;
+}
+
+.hero-list {
+    margin-top: 10rem;
 }
 
 .hero-list li {
@@ -106,7 +112,7 @@
 /* recipe */
 
 .recipe {
-    margin-top: 10rem;
+    margin-top: 20rem;
 }
 
 .recipe h2 {
@@ -143,14 +149,14 @@
 /* nutrient */
 
 .nutrient {
-    margin-top: 10rem;
+    margin-top: 20rem;
     margin-bottom: 12rem;
 }
 
 .nutrient h2 {
     /* fw700+fz5r */
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 .nutrient p {
     /* fw200+fz2.5r+c */
@@ -176,7 +182,7 @@
     flex-direction: column; /* 플렉스의 메인축 방향을 컬럼방향으로 (세로) */
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    gap: 1.2rem;
 }
 .nutrient-list li dl dt {
     /* fw500+fz3.5r+c */
