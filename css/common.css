@@ -81,8 +81,8 @@ img {
 /* header 수정 */
 #header,
 #header-sub {
-    width: 100%;
-    max-width: 200rem; /* 140rem으로 최대 너비 제한 */
+    /* width: 100%; */
+    width: 2000px;
     min-height: 40rem;
     background: url(../img/main/header-background.jpg) no-repeat;
     position: relative;
@@ -91,6 +91,7 @@ img {
     display: flex;
     justify-content: center; /* flexbox를 사용하여 내부 요소를 가운데 정렬 */
     align-items: center; /* 세로축에서도 가운데 정렬 */
+    text-align: center;
 }
 #header-sub {
     background-image: url(../img/sub/header-background.jpg) no-repeat;
@@ -236,4 +237,114 @@ img {
 .sns {
     display: flex;
     gap: 1rem;
+}
+
+.phone-menu {
+    position: absolute;
+    top: 130px;
+    right: 100px;
+    width: 70px;
+    height: 70px;
+    display: none;
+}
+
+/* 테블릿 */
+@media (max-width: 1024px) {
+    .inner {
+        width: 969px;
+        /* margin: 0 auto; */
+    }
+
+    #header {
+        width: 1023px;
+    }
+
+    .header-con a {
+        margin: 0 auto;
+    }
+
+    .header-con .gnb {
+        display: none;
+    }
+
+    #header .inner h1 {
+        font-size: 45px;
+    }
+
+    .phone-menu {
+        display: block;
+    }
+
+    .future {
+        width: 963px;
+        text-align: center;
+    }
+
+    .future figure {
+        margin-top: 3rem;
+        width: 963px;
+    }
+
+    .future h2 {
+        /* fw700+fz3.3r */
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    .future p {
+        /* fw200+fz2.2r+c */
+        font-weight: 200;
+        font-size: 1.5rem;
+        color: var(--text-shadow-color);
+    }
+
+    .phone-none {
+        display: none;
+    }
+
+    .is-mi {
+        width: 100%;
+    }
+
+    .hero-list {
+        margin-top: 10rem;
+    }
+
+    .hero-list li {
+        margin-top: 15.5rem;
+    }
+
+    .hero-list li {
+        display: flex; /* 플랙스 박스 */
+        justify-content: center;
+        align-items: center;
+        gap: 30rem;
+    }
+
+    .hero-list li:last-child {
+        flex-direction: row-reverse; /* row방향을 반대로  */
+        left: 1rem;
+    }
+
+    .hero-list li strong {
+        font-size: 7rem;
+        text-align: left;
+    }
+
+    .hero-list li strong b {
+        font-size: 7rem;
+        text-align: left;
+    }
+
+    .hero-list li p {
+        /* fw100+fz3r */
+        font-weight: 100;
+        font-size: 3rem;
+    }
+
+    .hero-wrap {
+        display: flex;
+        flex-direction: column; /* 플렉스의 메인축 방향을 컬럼방향으로 (세로) */
+        gap: 5.2rem;
+    }
 }

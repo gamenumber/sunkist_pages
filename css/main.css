@@ -91,16 +91,19 @@
     /* fw100+fz8r */
     font-weight: 100;
     font-size: 8rem;
+    text-align: left;
 }
 
 .hero-list li strong b {
     font-weight: 200;
+    text-align: left;
 }
 
 .hero-list li p {
     /* fw100+fz3r */
     font-weight: 100;
     font-size: 3rem;
+    text-align: left;
 }
 
 .hero-wrap {
