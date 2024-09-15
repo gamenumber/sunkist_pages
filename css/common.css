@@ -440,3 +440,36 @@ img {
 
     /* sub */
 }
+
+
+/* 모바일 */
+@media (max-width: 420px) {
+    /* main */
+    .inner {
+        width: 400px;
+    }
+
+    #header {
+        width: 420px;
+    }
+
+    .header-con {
+        padding: 1rem;
+    }
+
+    .header-con a {
+        margin: 0 auto;
+    }
+
+    #header .inner br {
+        display: none;
+    }
+
+    #header .inner h1 {
+        font-size: 2.5rem;
+    }
+
+    .phone-menu {
+        right: 40px;
+    }
+}
