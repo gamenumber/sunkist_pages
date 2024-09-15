@@ -377,15 +377,16 @@ img {
     }
 
     #footer {
-        min-height: 120rem;
+        min-height: 60rem;
     }
     #footer .footer-wrap {
         flex-direction: column;
-        min-height: 100rem;
+        min-height: 50rem;
+        gap: 1rem;
     }
 
     #footer .footer-wrap .left-wrap {
-        min-height: 40rem;
+        min-height: 20rem;
     }
 
     #footer .footer-wrap .left-wrap .left-figure {
@@ -396,6 +397,46 @@ img {
         width: 100%;
         height: 100%;
     }
+
+    #footer .footer-wrap .left-wrap .sns {
+        justify-content: space-between;
+    }
+
+    #footer .footer-wrap .left-wrap .sns li {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #footer .footer-wrap .left-wrap .sns li figure {
+        width: 100%;
+        height: 100%;
+    }
+    #footer .footer-wrap .left-wrap .sns li figure img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #footer .footer-wrap .right-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 20rem;
+        gap: 1.8rem;
+    }
+
+    #footer .footer-wrap .right-wrap p {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #footer .footer-wrap .right-wrap p b {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    #footer .footer-wrap .right-wrap p strong {
+        font-size: 2.3rem;
+    }
+
 
     /* sub */
 }
