@@ -250,6 +250,7 @@ img {
 
 /* 테블릿 */
 @media (max-width: 1024px) {
+    /* main */
     .inner {
         width: 969px;
         /* margin: 0 auto; */
@@ -298,6 +299,25 @@ img {
         color: var(--text-shadow-color);
     }
 
+    .pursuit {
+        padding: 1rem;
+    }
+
+    .pursuit .inner h2 {
+        font-weight: 700;
+        font-size: 3.5rem;
+    }
+
+    .pursuit .inner .pursuit-list li dl {
+        gap: 0.5rem;
+    }
+    .pursuit .inner .pursuit-list li dl dt {
+        font-size: 2.8rem;  
+    }
+    .pursuit .inner .pursuit-list li dl dd {
+        font-size: 1.8rem;
+    }
+
     .phone-none {
         display: none;
     }
@@ -307,23 +327,15 @@ img {
     }
 
     .hero-list {
-        margin-top: 10rem;
+        padding: 5rem;
     }
 
     .hero-list li {
-        margin-top: 15.5rem;
+        justify-content: space-between;
     }
 
-    .hero-list li {
-        display: flex; /* 플랙스 박스 */
-        justify-content: center;
-        align-items: center;
-        gap: 30rem;
-    }
-
-    .hero-list li:last-child {
-        flex-direction: row-reverse; /* row방향을 반대로  */
-        left: 1rem;
+    .hero-list li:nth-child(1) {
+        margin-left: 2rem;
     }
 
     .hero-list li strong {
@@ -345,6 +357,45 @@ img {
     .hero-wrap {
         display: flex;
         flex-direction: column; /* 플렉스의 메인축 방향을 컬럼방향으로 (세로) */
-        gap: 5.2rem;
+        gap: 2rem;
     }
+
+    .recipe-list p {
+        font-size: 3.3rem;
+    }
+
+    .nutrient {
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+
+    .nutrient .inner h2 {
+        font-size: 5rem;
+    }
+    .nutrient .inner p {
+        font-size: 2.5rem;
+    }
+
+    #footer {
+        min-height: 120rem;
+    }
+    #footer .footer-wrap {
+        flex-direction: column;
+        min-height: 100rem;
+    }
+
+    #footer .footer-wrap .left-wrap {
+        min-height: 40rem;
+    }
+
+    #footer .footer-wrap .left-wrap .left-figure {
+        width: 30rem;
+        height: 15rem;
+    }
+    #footer .footer-wrap .left-wrap .left-figure .left-figure-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* sub */
 }
