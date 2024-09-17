@@ -417,6 +417,7 @@ img {
     }
 
     #footer .footer-wrap .right-wrap {
+        margin-top: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
