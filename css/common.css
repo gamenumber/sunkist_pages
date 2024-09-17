@@ -248,6 +248,8 @@ img {
     display: none;
 }
 
+
+
 /* 테블릿 */
 @media (max-width: 1024px) {
     /* main */
@@ -274,6 +276,7 @@ img {
 
     .phone-menu {
         display: block;
+        z-index: 5;
     }
 
     .future {
@@ -440,4 +443,64 @@ img {
 
 
     /* sub */
+}
+
+/* 핸드폰 메뉴 */
+.menu-container {
+    position: relative;
+}
+
+.phone-menu {
+    cursor: pointer;
+    position: absolute;
+    top: 6rem;  /* 이 값을 조정하여 버튼을 위로 올립니다 */
+    right: 1rem;
+    /* margin-top: 1rem; */
+    /* margin-left: 5rem; */
+}
+
+.phone-menu img {
+    width: 20px;
+    height: 20px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;      /* top 값을 0으로 변경하여 메뉴 버튼 바로 아래에 위치하도록 합니다 */
+    right: 0;
+    width: 150px;
+    background-color: var(--gray-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    font-size: 14px;
+}
+
+.submenu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.submenu-close {
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+}
+
+.submenu-item {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #eee;
+}
+
+.submenu-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* 메뉴를 열기 위한 클래스 */
+.submenu.active {
+    display: block;
 }
