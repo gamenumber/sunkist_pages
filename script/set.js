@@ -1,33 +1,47 @@
 document.addEventListener("DOMContentLoaded", function () {
     const categoryItems = document.querySelectorAll(".category li");
-    const sectionsContainer = document.getElementById("sections-container");
     const sections = Array.from(document.querySelectorAll(".menu-section"));
+    const categoryContainer = document.querySelector(".category");
 
-    // 처음에 모든 섹션을 표시
-    sections.forEach((section) => (section.style.display = "block"));
+    function initializeSections() {
+        sections.forEach((section, index) => {
+            section.style.display = index < 3 ? "block" : "none";
+        });
+    }
+
+    function handleWindowResize() {
+        if (window.innerWidth > 1024) {
+            categoryContainer.style.display = "flex";
+            sections.forEach(section => section.style.display = "block");
+        } else {
+            categoryContainer.style.display = "none";
+            initializeSections();
+        }
+    }
+
+    // Initial setup
+    handleWindowResize();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleWindowResize);
 
     categoryItems.forEach((item) => {
         item.addEventListener("click", function () {
             const category = this.getAttribute("data-category");
 
-            // 해당 카테고리의 섹션만 필터링
-            const filteredSections = sections.filter(
-                (section) => section.getAttribute("data-category") === category
-            );
-
-            // 모든 섹션 숨기기
-            sections.forEach((section) => (section.style.display = "none"));
-
-            // 섹션을 무작위로 섞기
-            const shuffledSections = filteredSections.sort(
-                () => Math.random() - 0.5
-            );
-
-            // 처음 3개의 섹션만 표시
-            for (let i = 0; i < 3; i++) {
-                if (shuffledSections[i]) {
-                    shuffledSections[i].style.display = "block";
+            sections.forEach((section) => {
+                if (section.getAttribute("data-category") === category) {
+                    section.style.display = "block";
+                } else {
+                    section.style.display = "none";
                 }
+            });
+
+            if (window.innerWidth <= 1024) {
+                const visibleSections = sections.filter(section => section.style.display === "block");
+                visibleSections.forEach((section, index) => {
+                    section.style.display = index < 3 ? "block" : "none";
+                });
             }
         });
     });
