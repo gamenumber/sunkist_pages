@@ -4,7 +4,6 @@
     justify-content: space-between;
     margin: 5rem 0;
     flex-wrap: wrap; /* Flex 아이템이 화면 크기에 맞게 줄 바꿈을 할 수 있도록 함 */
-    counter-reset: category; /* 카운터 초기화 */
 }
 
 .category li {
@@ -229,5 +228,23 @@
         width: 5rem;
         height: 5rem;
         z-index: 50;
+    }
+
+    .category {
+        display: flex; /* Ensure the container is a flex container */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Optional: Ensures content doesn't wrap */
+    }
+
+    .category li a::before {
+        content: "";
+        display: block;
+        aspect-ratio: 1/1;
+        background: no-repeat center center / cover;
+        user-select: none;
+        pointer-events: none;
+        margin-bottom: 1rem; /* 이미지와 텍스트 사이 간격 */
+        transition: 0.4s;
     }
 }
