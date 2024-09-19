@@ -88,12 +88,13 @@
 
     .pursuit {
         /* padding: 2rem; */
-        width: 400px;
+        width: 420px;
     }
 
     .pursuit .inner {
-        width: 400px;
+        width: 380px;
         text-align: center;
+        margin: 0 auto;
     }
 
     .pursuit .inner h2 {
@@ -103,10 +104,8 @@
     }
 
     .pursuit .inner .pursuit-list {
-        /* flex-wrap: wrap; */
-        /* padding: 1rem; */
-        flex-wrap: wrap;
-        align-items: center;
+        flex-direction: column;
+        /* align-items: center; */
     }
 
     .pursuit .inner .pursuit-list li {
@@ -204,11 +203,13 @@
 
     .recipe {
         /* padding: 1.5rem; */
-        margin-right: 2rem;
+        width: 420px;
     }
 
     .recipe .inner {
-        margin-right: 2rem;
+        width: 380px;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .recipe .inner h2 {
@@ -319,6 +320,14 @@
     #footer .footer-wrap .right-wrap strong {
         font-size: 2rem;
         text-align: center;
+    }
+
+    .pursuit {
+        margin: 0 auto;
+    }
+
+    .pursuit .inner {
+        margin: 0 auto;
     }
 
     /* sub */
