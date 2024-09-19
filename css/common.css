@@ -93,7 +93,7 @@ img {
     text-align: center;
 }
 
-#header{
+#header {
     /* width: 100%; */
     width: 2000px;
     min-height: 40rem;
@@ -251,67 +251,66 @@ img {
 
 /* 핸드폰 메뉴 */
 .menu-container {
-    position: relative;
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 5rem;
+    height: 5rem;
+    z-index: 50;
 }
 
 .phone-menu {
     cursor: pointer;
-    position: absolute;
-    top: 6rem;  /* 이 값을 조정하여 버튼을 위로 올립니다 */
-    right: 1rem;
-    z-index: 500;
-    /* margin-top: 1rem; */
-    /* margin-left: 5rem; */
-    display: none;
-}
-
-.phone-menu img {
-    width: 20px;
-    height: 20px;
+    z-index: 1000;
+    position: fixed; /* relative에서 fixed로 변경 */
+    top: 20px; /* 상단 위치 지정 */
+    right: 20px; /* 오른쪽 위치 지정 */
+    width: 5rem; /* 너비 지정 */
+    height: 5rem; /* 높이 지정 */
 }
 
 .submenu {
     display: none;
-    position: absolute;
-    top: 0;      /* top 값을 0으로 변경하여 메뉴 버튼 바로 아래에 위치하도록 합니다 */
+    position: fixed;
+    top: 0;
     right: 0;
-    width: 150px;
-    background-color: var(--gray-color);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    z-index: 1000;
-    font-size: 14px;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1001;
+}
+
+.submenu.active {
+    display: block;
+    transform: translateX(0);
 }
 
 .submenu-header {
-    display: flex;
-    justify-content: flex-end;
-    padding: 5px;
+    padding: 20px;
+    text-align: left;
 }
 
 .submenu-close {
+    font-size: 24px;
     cursor: pointer;
-    font-size: 18px;
-    color: #666;
 }
 
 .submenu-item {
     display: block;
-    padding: 10px 15px;
+    padding: 15px 20px;
+    color: #333;
     text-decoration: none;
-    color: black;
     border-bottom: 1px solid #eee;
 }
 
 .submenu-item:hover {
-    background-color: #6587DE;
+    background-color: #173fc2;
+    color: #fff;
 }
-
-/* 메뉴를 열기 위한 클래스 */
-.submenu.active {
-    display: block;
-}
-
-
 
 /* 테블릿 */
 @media (max-width: 1024px) {
@@ -341,14 +340,15 @@ img {
     .phone-menu {
         cursor: pointer;
         position: absolute;
-        top: 6rem;  /* 이 값을 조정하여 버튼을 위로 올립니다 */
+        top: 6rem; /* 이 값을 조정하여 버튼을 위로 올립니다 */
         right: 1rem;
         display: block;
-    } 
+    }
 
     .future {
         width: 963px;
         text-align: center;
+        margin: 0 auto;
     }
 
     .future figure {
@@ -378,22 +378,40 @@ img {
         font-size: 3.5rem;
     }
 
+    .pursuit .inner .pursuit-list {
+        /* justify-content: space-between; */
+        justify-content: space-around;
+        gap: 1.5rem;
+    }
+
+    .pursuit .inner .pursuit-list li {
+        overflow: hidden;
+        width: 40rem;
+        height: 42rem;
+    }
+
+    .pursuit .inner .pursuit-list li figure {
+        overflow: hidden;
+        width: 45rem;
+    }
+
+    .pursuit .inner .pursuit-list li figure img {
+        width: 100%;
+        height: 100%;
+    }
+
     .pursuit .inner .pursuit-list li dl {
         gap: 0.5rem;
     }
     .pursuit .inner .pursuit-list li dl dt {
-        font-size: 2.8rem;  
+        font-size: 2.8rem;
     }
     .pursuit .inner .pursuit-list li dl dd {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .phone-none {
         display: none;
-    }
-
-    .is-mi {
-        width: 100%;
     }
 
     .hero-list {
@@ -508,19 +526,13 @@ img {
         font-size: 2.3rem;
     }
 
-
-    /* sub */
-
-    #header-sub .inner h1  {
-        font-size: 3.5rem;   
-    }
-   
-    .menu-container  {
+    .menu-container {
         display: block;
-        right: 40px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
         width: 5rem;
         height: 5rem;
-        position: absolute;
         z-index: 50;
     }
 }
