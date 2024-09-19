@@ -343,6 +343,7 @@ img {
         top: 6rem; /* 이 값을 조정하여 버튼을 위로 올립니다 */
         right: 1rem;
         display: block;
+        /* background: #000; */
     }
 
     .future {

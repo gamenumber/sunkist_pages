@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const categoryItems = document.querySelectorAll(".category li");
     const sections = Array.from(document.querySelectorAll(".menu-section"));
-    const categoryContainer = document.querySelector(".category");
 
     function initializeSections() {
         sections.forEach((section, index) => {
@@ -11,10 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function handleWindowResize() {
         if (window.innerWidth > 1024) {
-            categoryContainer.style.display = "flex";
-            sections.forEach(section => section.style.display = "block");
+            sections.forEach((section) => (section.style.display = "block"));
         } else {
-            categoryContainer.style.display = "none";
             initializeSections();
         }
     }
@@ -38,7 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             if (window.innerWidth <= 1024) {
-                const visibleSections = sections.filter(section => section.style.display === "block");
+                const visibleSections = sections.filter(
+                    (section) => section.style.display === "block"
+                );
                 visibleSections.forEach((section, index) => {
                     section.style.display = index < 3 ? "block" : "none";
                 });
