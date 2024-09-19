@@ -320,4 +320,14 @@
         font-size: 2rem;
         text-align: center;
     }
+
+    /* sub */
+
+    #header-sub {
+        max-width: 420px;
+    }
+
+    .menu-section h2 {
+        font-size: 4rem;
+    }
 }
