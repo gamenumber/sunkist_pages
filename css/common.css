@@ -82,7 +82,7 @@ img {
 
 #header-sub {
     background: url(../img/sub/header-background.jpg) no-repeat;
-    width: 2000px;
+    width: 100%;
     min-height: 40rem;
     position: relative;
     margin: 0 auto;
@@ -95,11 +95,11 @@ img {
 
 #header {
     /* width: 100%; */
-    width: 2000px;
+    width: 100%;
     min-height: 40rem;
     background: url(../img/main/header-background.jpg) no-repeat;
     position: relative;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 7rem;
     display: flex;
     justify-content: center; /* flexbox를 사용하여 내부 요소를 가운데 정렬 */
@@ -111,21 +111,30 @@ img {
     /* fw700+fz8r+c#fff */
     align-items: center;
     font-weight: 700;
-    font-size: 8rem;
+    font-size: clamp(2.7rem, 2vw, 8rem);
     color: var(--white-100);
 }
 
 .inner {
-    width: 140rem;
+    width: 70%;
     /* background: var(--grid-color); */
-    margin: 0 auto; /* Center the inner content */
+    margin: 0 auto;
     text-align: center;
 }
 
 .header-con {
     display: flex;
     gap: 20rem;
-    padding: 6rem;
+    padding: 6rem 0 6rem 0;
+}
+
+.header-con a figure {
+    width: 21.7rem;
+    aspect-ratio: 1/0.5529953917050691;
+}
+.header-con a figure img {
+    width: 100%;
+    height: 100%;
 }
 
 .header-con .gnb {
@@ -135,9 +144,10 @@ img {
 
 #header .inner h1 {
     /* fw700+fz8r+c#fff */
+    align-items: center;
     font-weight: 700;
-    font-size: 8rem;
-    color: #fff;
+    font-size: clamp(2.7rem, 6vw, 8rem);
+    color: var(--white-100);
 }
 
 .gnb li {
@@ -181,7 +191,7 @@ img {
 
 #footer {
     width: 100%; /* Change width to 100% for full width */
-    max-width: 200rem; /* Limit max width */
+    /* max-width: 200rem; Limit max width */
     min-height: 40rem;
     background: var(--sub-color2);
     position: relative;
@@ -313,16 +323,11 @@ img {
 }
 
 /* 테블릿 */
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
     /* main */
     .inner {
-        width: 969px;
+        width: 94.6289%;
         /* margin: 0 auto; */
-    }
-
-    #header-sub,
-    #header {
-        width: 1023px;
     }
 
     .header-con a {
@@ -331,10 +336,6 @@ img {
 
     .header-con .gnb {
         display: none;
-    }
-
-    #header .inner h1 {
-        font-size: 45px;
     }
 
     .phone-menu {
@@ -347,14 +348,14 @@ img {
     }
 
     .future {
-        width: 963px;
+        width: 94.6289%;
         text-align: center;
         margin: 0 auto;
     }
 
     .future figure {
         margin-top: 3rem;
-        width: 963px;
+        width: 100%;
     }
 
     .future h2 {
@@ -382,7 +383,6 @@ img {
     .pursuit .inner .pursuit-list {
         /* justify-content: space-between; */
         justify-content: space-around;
-        gap: 1.5rem;
     }
 
     .pursuit .inner .pursuit-list li {

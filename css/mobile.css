@@ -1,12 +1,12 @@
 /* 모바일 */
-@media (max-width: 420px) {
+@media (max-width: 600px) {
     body,
     html {
         overflow-x: hidden; /* 가로 스크롤 방지 */
     }
     /* main */
     .inner {
-        width: 400px;
+        width: 96.6667%;
     }
 
     .menu-container {
@@ -20,7 +20,7 @@
     }
 
     #header {
-        max-width: 420px;
+        max-width: 600px;
     }
 
     .header-con {
