@@ -92,7 +92,7 @@
     display: flex; /* 플랙스 박스 */
     justify-content: center;
     align-items: center;
-    gap: 30rem;
+    justify-content: space-between;
 }
 
 .hero-list li:last-child {
@@ -206,7 +206,7 @@
 }
 
 .nutrient-list li {
-    width: 30%;
+    width: 32%;
     aspect-ratio: 1/1.436416184971098;
 }
 
@@ -239,4 +239,27 @@
     padding: 10px 20px;
     font-weight: 700;
     color: var(--white-100);
+}
+
+@media (max-width: 600px) {
+    .hero-list li .hero-wrap strong {
+        /* align-self: flex-start; */
+        font-weight: 100;
+        font-size: 6.2rem;
+        text-align: center;
+    }
+    .hero-list li .hero-wrap strong b {
+        /* align-self: center; */
+        font-weight: 200;
+        font-size: 6.2rem;
+        text-align: center;
+    }
+
+    .hero-list li .hero-wrap p {
+        /* align-self: flex-start; */
+        font-size: 1.5rem;
+        /* text-align: center; */
+        text-align: center;
+        /* margin-left: 3.5rem; */
+    }
 }
