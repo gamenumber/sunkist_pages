@@ -137,7 +137,6 @@
 }
 
 /* 호버 효과 */
-
 .category li a:hover::before {
     transform: scale(1.1); /* 크기를 10% 키움 */
     transition: transform 0.3s ease-in-out; /* 부드러운 전환 효과 */
@@ -252,5 +251,6 @@
         height: 5rem;
         z-index: 50;
     }
+
 }
 
