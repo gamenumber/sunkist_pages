@@ -420,10 +420,6 @@ img {
         padding: 5rem;
     }
 
-    .hero-list li {
-        justify-content: space-between;
-    }
-
     .hero-list li:nth-child(1) {
         margin-left: 2rem;
     }
@@ -447,7 +443,7 @@ img {
     .hero-wrap {
         display: flex;
         flex-direction: column; /* 플렉스의 메인축 방향을 컬럼방향으로 (세로) */
-        gap: 2rem;
+        gap: 0;
     }
 
     .hero-wrap figure {
@@ -551,6 +547,4 @@ img {
         height: 5rem;
         z-index: 50;
     }
-
-    
 }
