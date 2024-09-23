@@ -81,7 +81,7 @@ img {
 /* header 수정 */
 
 #header-sub {
-    background: url(../img/sub/header-background.jpg) no-repeat;
+    background: url(../img/sub/header-background.jpg) no-repeat 0 0 / cover;
     width: 100%;
     min-height: 40rem;
     position: relative;
@@ -97,7 +97,7 @@ img {
     /* width: 100%; */
     width: 100%;
     min-height: 40rem;
-    background: url(../img/main/header-background.jpg) no-repeat;
+    background: url(../img/main/header-background.jpg) no-repeat 0 0 / cover;
     position: relative;
     /* margin: 0 auto; */
     padding: 7rem;
