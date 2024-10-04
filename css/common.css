@@ -563,11 +563,23 @@ img {
     background-color: transparent;
 }
 
-.submenu2 li a {
+.submenu2 li {
     display: block;
-    border: 1px solid #ff0;
+    /* border: 1px solid #ff0; */
     padding: 10px;
     text-align: center;
-    background: #333;
-    color: #fff;
+    background: #fff;
+    color: #000;
+}
+
+.gnb li:hover .submenu2 li a {
+    text-align: center;
+    background: #fff;
+    color: #000;
+    transition: 0.4s;
+}
+
+.submenu2 li:hover a {
+    color: #fff !important;
+    background: var(--main-color) !important;
 }
